@@ -1,0 +1,254 @@
+h1 {
+    color: blue;
+    text-align: center;
+    text-shadow: 8px 2px 10px;
+}
+
+h6 {
+    color: rgb(10,86,8);
+}
+
+.big {
+    color: orange;
+}
+
+#sec {
+    background-color: yellowgreen;
+}
+
+nav {
+    background-color : blue;
+    text-align: right;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 2px;
+}
+
+a {
+ text-decoration-line: none;
+ color: red;
+}
+
+.container {
+    background-color: yellow;
+    border :10px dashed grey;
+    margin: 10px 20px 10px 20px;
+    padding: 10px 10px;
+}
+
+.box {
+  /*  display:inline-block;*/
+    background-color: green;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+}
+
+@keyframes fadeMe {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#box1 {
+    animation-name: fadeMe;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background-color: blue;
+}
+
+@keyframes rotateMe {
+    0% {transform: rotate(90deg);}
+    50% {transform: rotate(180deg);}
+    100%{transform: rotate(360deg)}
+}
+
+#box2 {
+   animation-name: rotateMe;
+   animation-duration: 5s;
+   animation-iteration-count: 4s;
+   animation-timing-function: ease-in-out;
+   border-radius: 10%;
+   background-image: radial-gradient(circle,blue,green,pink,violet)
+}
+
+@keyframes getBigger {
+    0% {transform: scale(1);}
+    50% {transform: scale(2);}
+    100% {transform: scale(.5);}
+}
+
+#box3 {
+    animation: getBigger 4s 4s infinite;
+    border-radius: 50%;
+    background-color: orange;
+}
+
+@keyframes changeColors {
+    0%{background-color: aquamarine}
+    25%{background-color: yellow}
+    50%{background-color: yellowgreen}
+    75%{background-color: orange}
+    100%{background-color: orangered}
+}
+
+#box4 {
+  /*  animation: changeColors 3s 4s infinite;*/
+    animation: changeColors 3s 4s forwards;
+}
+
+@keyframes moveBox {
+    0% {left: 0px; top: 0px}
+    25% {left:100px; top: 0px}
+    50% {left:1000px; top: 200px}
+    75% {left: 0px; top: 200px}
+    100% {left: 0px; top: 0px}
+}
+
+#box5{
+    background-color: violet;
+    animation: moveBox 3s 4s infinite;
+    position : relative;
+}
+
+#box6 {
+    background-color: yellowgreen;
+    top: 10px;
+    left: 20px;
+    position: relative;
+    /*position: absolute;*/
+   /* position: fixed;*/
+}
+
+.circle-img {
+    border-radius:50%;
+}
+
+img {
+   box-shadow: 50PX blue; 
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px;
+    border: 10px solid orange;
+    align-items: center; 
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+/*html {
+    background-image: url(dog.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-image: linear-gradient(to right,blue,green,purple);
+    background-image: linear-gradient(to bottom,blue,green,purple); 
+    background-image: radial-gradient(blue,green,purple);
+} */
+
+.contact-box {
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    margin: 50px;
+}
+
+.input-field {
+    margin: 20px;
+}
+
+
+
+form input, textarea, button {
+    margin :30px;
+    display : block;
+}
+
+.contact2 {
+    background-color: plum;
+}
+
+.nav-wrapper {
+    background-color: yellowgreen;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 10px;
+  -ms-grid-column-span: repeat(5, [col] 100px ) ;
+  grid-template-rows: repeat(3, [row] auto  );
+  background-color: #fff;
+  color: #444
+}
+
+.Boxx {
+  background-color: white;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 150%;
+  z-index:10;
+}
+
+ .a {
+    grid-column: col 2 / span  2;
+    grid-row: row ;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .b {
+    grid-column: col 6 / span  1 ;
+    grid-row: row ;
+    display: flex;
+    justify-content: center;
+  }
+  .c {
+    grid-column: col /span 8 ;
+    grid-row: row 2 ;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(pink,yellow,orange);
+  }
+  .d {
+    grid-column: col 4/ span  3 ;
+    grid-row: row 2 ;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(pink,purple,yellow,orange);
+  }
+
+  .e {
+    grid-column: col 3 / span 2;
+    grid-row: row 4;
+    display: flex;
+    justify-content: center;
+  }
+
+  .f {
+    grid-column: col 6 / span 2;
+    grid-row: row 4  ;
+    background-color: paleturquoise);
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about2 {
+   margin: 20px;
+  }
